@@ -2,14 +2,14 @@
 
 
 Integrantes: 
-Belén Calpanchay González
+
+Belén Calpanchay González / Programación Fullstack con Digital House y Fundación Formar
 
 
-Rodrigo LLusco
+Rodrigo LLusco / Programación Fullstack con Digital House y Fundación Formar.
 
 
-Noelia Romina Acosta
-24 años, Licenciatura en Letras UBA. Programación Fullstack con Digital House y Fundación Formar
+Noelia Romina Acosta / 24 años, Licenciatura en Letras UBA. / Programación Fullstack con Digital House y Fundación Formar.
 
 BIENVENIDX A WOODY - NUESTRA EMPRESA
 
