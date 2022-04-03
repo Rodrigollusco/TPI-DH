@@ -1,0 +1,25 @@
+
+
+:root{
+    --color-bg: #fafaff;
+    --color-title-bg: #b2b2f9;
+    --color-pink: #ff4b64;
+    --color-gray: #555555;
+    --fs-form: 25px;
+}
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins';
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+li{
+  list-style: none;
+}
