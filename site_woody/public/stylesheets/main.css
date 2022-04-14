@@ -200,7 +200,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media(min-width : 1200px) {
     .categories {
         margin-bottom: 40px;
     }
