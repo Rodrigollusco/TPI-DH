@@ -213,6 +213,6 @@
     .fa-credit-card,
     .fa-truck,
     .fa-dollar-sign {
-        font-size: var(--fs-form);
+        font-size: var(--fs-title);
     }
 }
