@@ -34,6 +34,9 @@ app.get('/legales', (req,res) => {
 app.get('/terminos', (req,res) => {
   return res.sendFile(path.resolve(__dirname, 'views', 'terminos.html'))
 });
+app.get('/preguntas-frecuentes', (req,res) => {
+  return res.sendFile(path.resolve(__dirname, 'views', 'preguntas.html'))
+});
 
 app.get('/password', (req,res) => {
     return res.sendFile(path.resolve(__dirname, 'views', 'passwordless.html'))
