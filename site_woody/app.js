@@ -23,9 +23,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/users', usersRouter); */
 
 app.get('/', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'index.html')))
+
 app.get('/register', (req,res) => {
     return res.sendFile(path.resolve(__dirname, 'views', 'register.html'))
 });
+
+app.get('/legales', (req,res) => {
+  return res.sendFile(path.resolve(__dirname, 'views', 'legales.html'))
+});
+app.get('/terminos', (req,res) => {
+  return res.sendFile(path.resolve(__dirname, 'views', 'terminos.html'))
+});
+
 app.get('/password', (req,res) => {
     return res.sendFile(path.resolve(__dirname, 'views', 'passwordless.html'))
 });
