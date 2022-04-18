@@ -21,12 +21,35 @@ app.use(express.static(path.join(__dirname, 'public')));
 /* 
 app.use('/', indexRouter);
 app.use('/users', usersRouter); */
-
+/*home*/
 app.get('/', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'index.html')))
+/*login & register*/
+app.get('/login', (req,res) => {
+  return res.sendFile(path.resolve(__dirname, 'views', 'login.html'))
+});
+app.get('/register', (req,res) => {
+    return res.sendFile(path.resolve(__dirname, 'views', 'register.html'))
+});
+app.get('/password', (req,res) => {
+    return res.sendFile(path.resolve(__dirname, 'views', 'passwordless.html'))
+});
+/*contact*/
+app.get('/contact', (req,res) => {
+  return res.sendFile(path.resolve(__dirname, 'views', 'contact.html'))
+});
+/*carrito & productos*/
+app.get('/buy', (req,res) => {
+  return res.sendFile(path.resolve(__dirname, 'views', 'buy.html'))
+});
 
-app.get('/register', (req,res) =>  res.sendFile(path.resolve(__dirname, 'views', 'register.html'))
-);
-
+app.get('/productos', (req,res) => {
+  return res.sendFile(path.resolve(__dirname, 'views', 'productos.html'))
+});
+/*rutas de detalles de producto*/ 
+app.get('/painball', (req,res) => {
+  return res.sendFile(path.resolve(__dirname, 'views', 'painball.html'))
+});
+/*footer*/
 app.get('/legales', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'legales.html'))
 );
 app.get('/terminos', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'terminos.html'))
@@ -34,8 +57,7 @@ app.get('/terminos', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 
 app.get('/preguntas-frecuentes', (req,res) =>res.sendFile(path.resolve(__dirname, 'views', 'preguntas.html'))
 );
 
-app.get('/password', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'passwordless.html'))
-);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
