@@ -1,16 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-<<<<<<< HEAD
 @import './general.css';
 @import './header.css';
 @import './main.css';
 @import './footer.css';
-@import './terminos.css';
-@import './legales.css';
-@import './preguntas.css'
-=======
-
-@import './general.css';
 @import './productos.css';
 @import './detalle-prod.css';
 @import './login.css';
@@ -18,9 +11,12 @@
 @import './password.css';
 @import './cart.css';
 @import './contact.css';
+@import './terminos.css';
+@import './legales.css';
+@import './preguntas.css'
 
 
 
 
 
->>>>>>> e7a8063f28689e8bce68a30851ffd9cbb196b89e
+

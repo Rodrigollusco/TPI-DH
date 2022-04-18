@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
 
-<<<<<<< HEAD
 :root {
   --color-bg: #fafaff;
   --color-title-bg: #b2b2f9;
@@ -26,28 +25,6 @@
   --fs-bodytext:18px;
   --fs-subtitle:14px;
   --fs-subtitle-sub: 12px; 
-=======
-:root{
-  /*colors*/
-    --color-bg: #fafaff;
-    --color-title-bg: #b2b2f9;
-    --color-pink: #ff4b64;
-    --color-gray: #555555;
-    --password-lightblue: #87cefa;
-    --color-orange-dark: #ff9700;
-    --color-orange-light: #fec607;
-    --color-gray-light: #777777; 
-    --color-blue-france: #4646f9;
-    --color-blue: #6666ff;
-    /*font sizes*/
-    --fs-title-big:40px;
-    --fs-title:35px;
-    --fs-subtitle:28px;
-    --fs-form: 25px;
-    --fs-bodytext:18px;
-    --fs-subtitle:14px;
-
->>>>>>> e7a8063f28689e8bce68a30851ffd9cbb196b89e
 }
 * {
  padding: 0;
@@ -58,10 +35,6 @@
 
 a{
   text-decoration: none;
-<<<<<<< HEAD
-=======
-  
->>>>>>> e7a8063f28689e8bce68a30851ffd9cbb196b89e
 }
 li{
   list-style: none;
