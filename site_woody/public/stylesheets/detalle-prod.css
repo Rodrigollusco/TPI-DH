@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body.detail{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.detail .container{
+    
+    height: 90vh;
+    width: 90%;
+    background: linear-gradient(#6666ff, #87cefa);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.detail .card{
+    background-color: white;
+    width: 85%;
+    height: 80%;
+    border-radius: 8px;
+    display: flex;
+  
+    flex-direction: column;
+}
+.detail .card .images, .card .infos{
+    width: 50%;
+}
+.detail .infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    z-index: 1;
+}
+.detail .infos .precio{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.detail .infos .more-infos{
+    margin-left: 5px;
+    display: none;
+    width: 80%;
+    justify-content: space-between;
+    color: rgb(92, 92, 92);
+    font-size: 18px;
+}
+.detail .reviews{
+    margin: 2px;
+    color: gold;
+}
+.detail h3:nth-child(2){
+    color: gray;
+    text-decoration: line-through;
+    display: none;
+    margin-left: 5px;
+}
+.detail .more-infos h5:nth-child(1){
+    color: black;
+}
+.detail .info-content{
+ 
+    font-size: 12px;
+}
+.detail .buttons{
+    color: black;
+    margin-top: 15px;
+    font-size: 14px;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.detail .buttons a{
+    text-decoration: none;
+    color: black;
+}
+.detail .buttons button{
+    width: 40%;
+    font: inherit;
+    border: 2px solid lightskyblue;
+    border-radius: 20px;
+    background-color: white;
+}
+.detail .buttons button i{
+    color: #ff4b64;
+}
+.detail .buttons button:nth-child(1) i{
+    margin-right: 10px;
+}
+.detail .buttons button:hover{
+    color: white;
+    background-color: rgb(0, 167, 167);
+}
+.detail .slider{
+    height: 80%;
+    display: flex;
+    align-items: center;
+
+}
+.detail .slider img{
+    width: 80%;
+  margin: auto 130px;
+
+
+
+}
+@media(min-width:500px){
+    .detail .buttons{
+        margin-top: 15px;
+      width: 250px;
+        height: 40px;
+    }
+    .detail .slider img{
+       width: 150px;
+    }
+}
+@media(min-width:760px){
+    .detail .card{
+        flex-direction: row;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+    }
+    .detail .container{
+     height: 90vh;
+    width: 80%;
+    background: linear-gradient(#b2b2f9, #87cefa);
+
+    }
+    .detail .info-content{
+        font-size: 16px;
+        margin: 6px;
+    }
+    .detail .buttons button{
+        width: 40%;
+        border-radius: 20px;
+        background-color: white;
+    }
+    .detail .buttons{
+        font-size: var(--fs-bodytext);
+        margin-top: 30px;
+        height: 45px;
+        width: 250px;
+    }
+    .detail h3:nth-child(2){
+        display: inline;
+    }
+    .detail .infos .more-infos{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        color: gray;
+        font-size: 16px;
+    }
+    .detail .slider{
+        height: 100%;
+       } 
+       .detail .slider img{
+        margin: auto;
+        width: 100%;
+    }
+}
+@media(min-width:1200px){
+    .detail .container{
+        background: linear-gradient(#ff4b64, #b2b2f9);
+        width: 75%;
+    }
+    
+}

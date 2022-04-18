@@ -3,11 +3,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
 var app = express();
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users'); 
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,20 +18,28 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-/* app.use('/', indexRouter);
+/* 
+app.use('/', indexRouter);
 app.use('/users', usersRouter); */
 
-app.get('/', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'index.html')))
-app.get('/register', (req,res) => {
-    return res.sendFile(path.resolve(__dirname, 'views', 'register.html'))
-});
-app.get('/password', (req,res) => {
-    return res.sendFile(path.resolve(__dirname, 'views', 'passwordless.html'))
-});
-app.get('/sesion', (req,res) => {
-  return res.sendFile(path.resolve(__dirname, 'views', 'login.html'))
-});
+
+
+app.get('/', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'index.html')));
+app.get('/login', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'login.html')));
+app.get('/register', (req,res) =>  res.sendFile(path.resolve(__dirname, 'views', 'register.html')));
+app.get('/password', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'passwordless.html')));
+app.get('/buy', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'buy.html')));
+
+app.get('/productos', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'productos.html')));
+
+app.get('/contact', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'contact.html')));
+
+
+
+/*rutas de detalles de producto*/ 
+app.get('/painball', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'painball.html')));
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

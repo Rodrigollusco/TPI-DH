@@ -1,5 +1,5 @@
 {
-  "name": "woody",
+  "name": "site-woody",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,10 +12,5 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  },
-  "main": "app.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
