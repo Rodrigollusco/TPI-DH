@@ -1,6 +1,13 @@
 /* FOOTER  FOOTER FOOTER FOOTER FOOTER*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 footer {
     border-top: 2px solid var(--color-violet);
+    padding: 1em;
+    margin-top: auto;
 }
 
 /*footer-menu-ayuda-legales-direccion*/
