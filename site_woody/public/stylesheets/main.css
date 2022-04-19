@@ -188,13 +188,6 @@
         height: 125pxx;
     }
 
-    .fa-calendar-alt,
-    .fa-credit-card,
-    .fa-truck,
-    .fa-dollar-sign {
-        font-size: var(--fs-icons);
-    }
-
     .secure-purchase-text {
         font-size: var(--fs-subtitle);
     }
@@ -213,6 +206,6 @@
     .fa-credit-card,
     .fa-truck,
     .fa-dollar-sign {
-        font-size: var(--fs-title);
+        font-size: var(--fs-form);
     }
 }
