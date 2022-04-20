@@ -31,6 +31,8 @@ app.get('/password', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 
 
 /*contact*/
 app.get('/contacto', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'contact.html')));
+/*about-us*/
+app.get('/nosotros', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'about-us.html')));
 
 /*carrito & productos*/
 app.get('/buy', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'buy.html')));
