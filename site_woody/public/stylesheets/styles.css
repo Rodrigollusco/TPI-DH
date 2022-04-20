@@ -2,6 +2,7 @@
 
 
 @import './general.css';
+@import './header.css';
 @import './productos.css';
 @import './detalle-prod.css';
 @import './login.css';

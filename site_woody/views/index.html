@@ -4,10 +4,243 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>WOODY</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/99a633ec0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>woody</h1>
+    <header>
+        <div class="header-container">
+            <div class="superior-menu-container">
+                <!-- burger-logo -->
+                <div class="burger-logo-container">
+                    <div class="burger-container">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="logo-container">
+                        <a href="/"><img src="./images/woody-logo.svg" alt="logo de woody" class="logo" /></a>
+                    </div>
+                </div>
+                <!-- search-bar -->
+                <div class="search-bar-container">
+                    <div class="search-bar-container-tablet-desktop">
+                        <input class="search-bar-input" type="text" placeholder="Buscar productos, marcas" />
+                        <button class="search-bar-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- user-cart -->
+                <div class="user-cart-container">
+                    <!-- user -->
+                    <div class="user-container">
+                        <a href="/login"><i class="fas fa-user"></i></a>
+                    </div>
+                    <!-- cart -->
+                    <div class="cart-container">
+                        <a href="/buy"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="inferior-menu-container">
+                <nav class="navbar-header-container">
+                    <ul class="navbar-header-list-container">
+                        <li class="navbar-header-list-items"><a href="/">home</a></li>
+                        <li class="navbar-header-list-items drop-down"><a href="/productos">productos<span class="submenu-button-down"><i
+                                        class="fas fa-caret-down"></i></span></a>
+                            <ul class="navbar-submenu-products-mobile-list">
+                                <li class="sub-menu-footer-mobile-list-items"><a href="#">muñecas y muñecos</a></li>
+                                <li class="sub-menu-footer-mobile-list-items"><a href="#">juguetes de construccion</a>
+                                </li>
+                                <li class="sub-menu-footer-mobile-list-items"><a href="#">juguetes de mesa</a></li>
+                                <li class="sub-menu-footer-mobile-list-items"><a href="#">otros</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-header-list-items"><a href="/contacto">contacto</a></li>
+                        <li class="navbar-header-list-items"><a href="/nosotros">nosotros</a></li>
+                        <li class="navbar-header-list-items drop-down footer-mobile-menu-items"><a href="#">ayuda<span class="submenu-button-down"><i
+                                        class="fas fa-caret-down"></i></span></a>
+                            <ul class="sub-menu-footer-mobile-list">
+                                <li class="sub-menu-footer-mobile-list-items"><a href="./preguntas-frecuentes">preguntas frecuentes</a></li>
+                                <li class="sub-menu-footer-mobile-list-items"><a href="./preguntas-frecuentes#pagos">pagos</a></li>
+                                <li class="sub-menu-footer-mobile-list-items"><a href="./preguntas-frecuentes#envios">envíos</a></li>
+                                <li class="sub-menu-footer-mobile-list-items"><a href="/preguntas-frecuentes#cambios-devoluciones">cancelaciones y devoluciones</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-header-list-items drop-down footer-mobile-menu-items"><a href="/legales">legales<span class="submenu-button-down"><i
+                                        class="fas fa-caret-down"></i></span></a>
+                            <ul class="sub-menu-footer-mobile-list">
+                                <li class="sub-menu-footer-mobile-list-items"><a href="/terminos">términos y condiciones</a></li>
+                                <li class="sub-menu-footer-mobile-list-items"><a href="#">política de privacidad</a></li>
+                                <li class="sub-menu-footer-mobile-list-items"><a href="#">trabajá con nosotros</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="rss-menu-mobile-container">
+                    <ul class="rss-header-menu-list">
+                        <li class="rss-header-menu-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="rss-header-menu-items"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="rss-header-menu-items"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     
+    </header>
+    <main>
+        <section class="home">
+            <article class="home-banner-mobile">
+                <a href="#">
+                    <img src="./images/banner-home-01.jpg" alt="banner-home" class="home-banner-image">
+                    <img src="./images/banner-home-desktop-01.png" alt="banner-home" class="home-banner-desktop-image">
+
+                </a>
+            </article>
+            <article class="home-extras-mobile">
+                <a href="/productos">
+                    <img src="./images/banner-descuentos-01.jpg" alt="" class="home-extras-mobile-image">
+                </a>
+            </article>
+            <article class="home-extras-mobile">
+                <a href="/productos">
+                    <img src="./images/banner-favoritos-02-02.jpg" alt="" class="home-extras-mobile-image">
+                </a>
+            </article>
+        </section>
+        <section class="categories">
+            <h2 class="title-section">
+                CATEGORÍAS
+            </h2>
+            <div id="miscellaneous"></div>
+            <div class="categories-banners-container">
+                <article class="categories-banners">
+                    <a href="/productos">
+                        <img class="categories-mobile" src="./images/categories-building.png" alt="">
+                        <img class="categories-circle" src="./images/categories-circle-building.png" alt="">
+                    </a>
+                </article>
+    
+                <article class="categories-banners">
+                    <a href="/productos">
+                        <img class="categories-mobile" src="./images/categories-stuffed.png" alt="">
+                        <img class="categories-circle" src="./images/categories-circle-stuffed (2).png" alt="">
+                    </a>
+                </article>
+    
+                <article class="categories-banners">
+                    <a href="/productos">
+                        <img class="categories-mobile" src="./images/categories-dolls.png" alt="">
+                        <img class="categories-circle" src="./images/categories-circle-dolls.png" alt="">
+                    </a>
+                </article>
+            </div>
+            
+
+
+        </section>
+        
+        <section class="secure-purchase">
+            <h2 class="title-section">
+                COMPRA SEGURA
+            </h2>
+            <div id="miscellaneous"></div>
+            <div class="secure-purchase-container">
+                <div class="secure-purchase-items">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p class="secure-purchase-text">Elegí la fecha de entrega</p>
+                </div>
+                <div class="secure-purchase-items">
+                    <i class="fas fa-credit-card"></i>
+                    <p class="secure-purchase-text">Elegí tu método de pago</p>
+                </div>
+                <div class="secure-purchase-items">
+                    <i class="fas fa-truck"></i>
+                    <p class="secure-purchase-text">Entregas en todo el país</p>
+                </div>
+                <div class="secure-purchase-items">
+                    <div safe-purchase-icon><i class="fas fa-dollar-sign"></i></div>
+                    <p class="secure-purchase-text">Reembolso del 100% por discomformidad</p>
+                </div>
+            </div>
+            
+        </section>
+        <section class="proveedores-container">
+            <h2 class="title-section">
+                BUSCAR POR MARCA
+            </h2>
+            <div id="miscellaneous"></div>
+            <div class="brands-container">
+                <div class="brand-items">
+                    <a href="/products">
+                        <img class="brand-image" src="./images/brand-1.png" alt="">
+                    </a>
+                </div>
+                <div class="brand-items">
+                    <a href="/productos">
+                        <img class="brand-image" src="./images/brand-2.png" alt="">
+                    </a>
+                </div>
+                <div class="brand-items">
+                    <a href="/productos">
+                        <img class="brand-image" src="./images/brand-3.png" alt="">
+                    </a>
+                </div>
+                <div class="brand-items">
+                    <a href="/productos">
+                        <img class="brand-image" src="./images/brand-4.png" alt="">
+                    </a>
+                </div>
+                <div class="brand-items">
+                    <a href="/productos">
+                        <img class="brand-image" src="./images/brand-5.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- FOOTER-MENU-AYUDA-LEGALES-DIRECCIÓN -->
+        <nav class="footer-menu-container">
+            <ul class="menu-footer-lista">
+                <li>
+                    <h4 class="menu-footer-title">ayuda</h4>
+                </li>
+                <li class="menu-footer-list-items"><a href="/preguntas-frecuentes">preguntas frecuentes</a></li>
+                <li class="menu-footer-list-items"><a href="preguntas-frecuentes#pagos">pagos</a></li>
+                <li class="menu-footer-list-items"><a href="preguntas-frecuentes#envios">envíos</a></li>
+                <li class="menu-footer-list-items"><a href="preguntas-frecuentes#cambios-devoluciones">cambios y devoluciones</a></li>
+            </ul>
+            <ul class="menu-footer-lista">
+                <li>
+                    <h4 class="menu-footer-title">legales</h4>
+                </li>
+                <li class="menu-footer-list-items"><a class="menu-footer-links" href="/legales">legales</a></li>
+                <li class="menu-footer-list-items"><a href="#">trabaja con nosotros</a></li>
+                <li class="menu-footer-list-items"><a href="/terminos">términos y condiciones</a></li>
+                <li class="menu-footer-list-items"><a href="#">políticas de privacidad</a></li>
+            </ul>
+            <ul class="menu-footer-lista">
+                <li>
+                    <h4 class="menu-footer-title">contactanos</h4>
+                </li>
+                
+                <li class="menu-footer-list-items"><span class="contact-icons"><i class="fab fa-whatsapp"></i></span>11-5897-5897</li>
+
+                <li class="menu-footer-list-items"><span class="contact-icons"><i class="fas fa-map-marker-alt"></i></span>av. rivadavia 5897</li>
+                <li class="menu-footer-list-items"><span class="contact-icons"><i class="fas fa-clock"></i></span>09:000hs a 17:00hs.</li>
+                <li class="menu-footer-list-items"><span class="contact-icons"><i class="fas fa-envelope"></i></span><a href="#">woody@ventas.com</a></li>
+            </ul>
+        </nav>
+        <!-- FOOTER-REDES-SOCIALES -->
+        <nav class="rss-container">
+            <a class="rss-container-items" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="rss-container-items" href="#"><i class="fab fa-facebook-square"></i></a>
+            <a class="rss-container-items" href="#"><i class="fab fa-twitter"></i></a>
+        </nav>
+        <!-- FOOTER-COPYRIGHT -->
+        <h5 class="copyright">©Todos los derechos reservados a Woody Toys S.A.</h5>
+    </footer>
 </body>
 </html>
