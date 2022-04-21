@@ -27,6 +27,7 @@ main.detail{
     border-radius: 8px;
     display: flex;
   height: 80vh;
+  display: flex;
     flex-direction: column;
 }
 .detail .card .slider, .card .infos{
@@ -39,19 +40,21 @@ main.detail{
     padding: 1me basta0px;
   margin: auto;  
      position: absolute;
-   top: 200px;
+/*    top: 200px; */
+bottom: 150px;
    right: 112px;
 }
 .detail .infos .precio{
     display: flex;
     width: 40%;
     justify-content: space-around;
+    margin: 5px 0;
 }
 .detail .infos .more-infos{
     margin-left: 5px;
     display: none;
     width: 80%;
-    justify-content: space-between;
+    justify-content: space-around;
     color: rgb(92, 92, 92);
     font-size: 18px;
 }
@@ -63,44 +66,42 @@ main.detail{
     color: gold;
 }
 .detail h3:nth-child(2){
+    font-size: var(--fs-subtitle-sub);
     color: gray;
     text-decoration: line-through;
-    display: none;
-    margin-left: 5px;
+    margin: 10px 5px;
 }
-.detail .more-infos h5:nth-child(1){
-    color: black;
-}
-.detail .info-content p{
+
+.detail .info-content {
  font-weight: 500;
-    font-size: 14px;
-    max-width: 80%;
+    font-size: var(--fs-subtitle-sub);
+    flex-wrap: wrap;
 }
 .detail .buttons{
-    color: black;
     margin-top: 15px;
-    font-size: 14px;
     width: 180px;
     height: 40px;
     display: flex;
     justify-content: space-evenly;
-
 }
 .detail .buttons a{
+    font-size: 16px;
     text-decoration: none;
     color: black;
 }
 .detail .buttons button{
-    width: 40%;
-    font: inherit;
+    width: 50%;
     border: 2px solid lightskyblue;
     border-radius: 20px;
     background-color: white;
+    margin-right: 5px;
 }
 .detail .buttons button i{
     color: #ff4b64;
+    font-size: 16px;
+    margin: 2px 5px;
 }
-.detail .buttons button:nth-child(1) i{
+.detail .buttons .buttons:nth-child(1) i{
     margin-right: 10px;
 }
 .detail .buttons button:hover{
@@ -118,8 +119,7 @@ main.detail{
 
 .detail .slider img{
     display: flex;
-    margin-top:15px;
-    margin-left: 180px;
+    margin: 25px 35px 50px 200px;
     max-width: 70%;
     position: absolute;
 }
@@ -127,18 +127,69 @@ main.detail{
 @media(min-width:500px){
 
      .detail .infos{
+         font-size: var(--fs-bodytext);
         display: flex;
-        top: 250px;
-        margin: 100px 0;
+        flex-wrap: wrap;
+        bottom: 150px;
     }
     
  .detail .slider img{
      display: flex;
-     margin-top:25px;
+     margin-top:20px;
      margin-left: 150px;
     max-width: 70%;
     max-height: 90%;
 
+    } 
+}
+@media(min-width:690px){
+    .detail .card{
+        flex-direction: row;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+    }
+    .detail .container{
+     height: 90vh;
+    width: 90%;
+    background: linear-gradient(#b2b2f9, #87cefa);
+
+    }
+    .detail .info-content{
+        font-size: var(--fs-subtitle);
+    }
+    .detail .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+      /*  top: 150px; */
+      bottom: 150px;
+       right: 80px;
+       margin: 0;
+    }
+    .detail .buttons button{
+        padding: 5px 2px;
+        margin: 5px 10px;
+        width: 100px;
+        display: flex;
+        border-radius: 20px;
+        background-color: white;
+    }
+   
+    .detail .buttons{
+        font-size: var(--fs-bodytext);
+        margin-top: 30px;
+        height: 45px;
+        width: 250px;
+    }
+  
+    .detail .slider{
+        height: 100%;
+       } 
+       .detail .slider img{
+        display: block;
+        top: 80px;
+        margin: auto;
+        width: 80%;
     } 
 }
 @media(min-width:760px){
@@ -155,7 +206,6 @@ main.detail{
     .detail .info-content{
         font-size: 16px;
         margin: 6px;
-
     }
    
     .detail .infos{
@@ -163,14 +213,23 @@ main.detail{
         flex-direction: column;
         justify-content: space-between;
         padding: 40px;
-       top: 150px;
+    /*    top: 150px; */
+    bottom: 150px;
        right: 80px;
        margin: 0;
     }
+     
+    .detail .infos .more-infos{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        color: gray;
+        font-size: 16px;
+    }
     .detail .buttons button{
         padding: 5px 2px;
-        margin: 0 10px;
-        width: 150px;
+        margin: 5px 10px;
+        width: 100px;
         display: flex;
         border-radius: 20px;
         background-color: white;
@@ -185,13 +244,7 @@ main.detail{
     .detail h3:nth-child(2){
         display: inline;
     }
-    .detail .infos .more-infos{
-        display: flex;
-        width: 80%;
-        justify-content: space-between;
-        color: gray;
-        font-size: 16px;
-    }
+   
     .detail .slider{
         height: 100%;
        } 
@@ -215,10 +268,13 @@ main.detail{
 @media(min-width:1200px){
     .detail .container{
         background: linear-gradient(#ff4b64, #b2b2f9);
-        width: 75%;
+        width: 90%;
     }
+   
     .detail .buttons button{
-        margin: 0 15px;
+       padding: 5px 2px;
+        margin: 5px 10px;
+        width: 100px;
     }
     .detail .slider img{
             display: block;
@@ -227,8 +283,12 @@ main.detail{
         width: 100%;
     } 
     .detail .infos{
-        padding: 80px;
-        top: 130px;
+        padding: 10px;
+        right: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        margin: 0 auto;
     }
-   
+
 }
