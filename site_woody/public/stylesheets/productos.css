@@ -1,0 +1,390 @@
+
+.productos{
+    display: flex;
+}
+.productos .section-p1 {
+    padding: 40px 80px;
+
+}
+
+.productos .section-m1 {
+    margin: 40px 0;
+}
+.productos button.normal{
+    /*boton del banner de descuento*/
+font-size: 14px;
+font-weight: 600;
+padding: 10px 30px;
+background-color: rgba(255, 255, 255, 0.64);
+color: var(--color-gray);
+border-radius: 5px;
+cursor: pointer;
+border: none;
+outline: none;
+transition: 0.3s ease-out;
+}
+
+/*section hero*/
+.productos #hero h1{
+    color: var(--color-orange-dark);
+    font-size: var(--fs-title-extrabig);
+    text-shadow: 2px 3px 1px rgb(222, 255, 245);
+    transition: 0.3s ease;
+}
+.productos #hero h1:hover{
+    transform: scale(1.2);
+    color: var(--color-orange-light);
+}
+.productos #hero h2 {
+    color: var(--color-blue-france);
+    text-shadow: 2px 1px 2px rgba(255, 160, 219, 0.776);
+    font-size: var(--fs-title-big);
+}
+
+.productos #hero h4 {
+    padding-bottom: 15px;
+    color: var(--color-gray);
+    text-shadow: 1px 1px 2px rgb(222, 255, 245, 0.8);
+    font-size: var(--fs-bodytext);
+}
+.productos #hero h5{
+    color: var(--color-blue-france);
+    font-size: var(--fs-title);
+    font-weight: 600;
+    text-shadow: 1px 2px 2px rgba(222, 247, 255, 0.5);
+    border-radius: 8px;
+}
+.productos #hero {
+    background-image: url('/images/wallpaper.jpg');
+    height: 100vh;
+    opacity: 80%;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+/*section feature*/
+.productos #feature {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.productos #feature .fe-box {
+    width: 180px;
+    height: 250px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.productos #feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(43, 122, 57, 0.368);
+}
+
+.productos #feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: white;
+    background-color: var(--color-blue);
+}
+
+.productos #feature .fe-box:nth-child(2) h6 {
+    background-color: #f4cf8e;
+    color: var(--color-orange-dark);
+}
+
+.productos #feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+    color: var(--color-blue-france);
+}
+
+.productos #feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+    color: var(--color-blue);
+}
+
+.productos #feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+    color: var(--color-title-bg);
+
+}
+
+.productos #feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+    color: #f3b373;
+}
+
+.productos #feature .fe-box img {
+
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.productos h2{
+    text-align: center;
+    margin-top: 8px;
+    color: var(--color-pink);
+}
+.productos p{
+    margin: 3px 0;
+    text-align: center;
+    color: var(--color-blue);
+    font-size: var(--fs-bodytext);
+}
+.productos #product1 {
+    text-align: center;
+}
+.productos #product1 .pro-container {
+    display: flex;
+    justify-content: center;
+   /*  justify-content: space-between; */
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.productos #product1 .pro {
+    position: relative;
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease-in;
+}
+
+.productos #product1 .pro:hover {
+    box-shadow: 25px 25px 35px rgba(12, 90, 44, 0.152);
+}
+
+.productos #product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.productos #product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.productos #product1 .pro .des span {
+    color: var(--color-gray);
+    font-size: 12px;
+}
+
+.productos #product1 .pro .des h5 {
+    padding-top: 7px;
+    color: var(--color-gray);
+    font-size: 14px;
+}
+
+.productos #product1 .pro .des i {
+    font-size: 12px;
+    color: var(--color-orange-light);
+}
+
+.productos #product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-blue);
+}
+
+.productos #product1 .pro .cart {
+
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: var( --color-bg);
+    font-weight: 500;
+    border: 1px solid var(--color-orange-light);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+.productos #product1 .pro .cart i{
+
+    color: var(--color-orange-dark);
+}
+/*banner*/
+
+.productos #banner {
+    display: none;
+   /*  display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('/images/4680620.jpg');
+    background-blend-mode: darken;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.productos #banner2{
+    display: none;
+    /*  display: flex; */
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-image: url('/images/banner_bebes.jpg');
+     background-blend-mode: darken;
+     width: 100%;
+     height: 40vh;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.productos #banner3{
+    display: none;
+    /*  display: flex; */
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-image: url('/images/banner_infantes.jpg');
+     background-blend-mode: color-dodge;
+     width: 100%;
+     height: 40vh;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.productos #banner4{
+    display: none;
+    /*  display: flex; */
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-image: url('/images/banner_infantil.jpg');
+     background-blend-mode: color-dodge;
+     width: 100%;
+     height: 40vh;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.productos #banner5{
+    display: none;
+    /*  display: flex; */
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-image: url('/images/banner_mesa.webp');
+     background-blend-mode: color-dodge;
+     width: 100%;
+     height: 40vh;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.productos #banner6{
+    display: none;
+    /*  display: flex; */
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-image: url('/images/banner_exterior.jpg');
+     background-blend-mode: hue;
+     width: 100%;
+     height: 40vh;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.productos #banner7{
+    display: none;
+    /*  display: flex; */
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-image: url('/images/banner_electro.jpg');
+     background-blend-mode: color-dodge;
+     width: 100%;
+     height: 40vh;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.productos #banner2 h2{
+    color: var(--color-orange-light);
+    text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.821);
+}
+.productos #banner h4 {
+    color: var(--color-pink);
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(232, 255, 255, 0.514);
+
+}
+
+.productos #banner h2 {
+    color: var( --color-title-bg);
+    font-size: 30px;
+    padding: 10px 0;
+
+}
+.productos #banner h2 span{
+    color: var(--color-orange-dark);
+}
+@media(min-width:768px){
+    .productos #feature {
+        flex-direction: row;
+    }
+    .productos #product1 .pro-container {
+        display: flex;
+        margin: 20px 20px;
+       justify-content: space-around; 
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+    .productos #banner{
+        display: flex;
+    }
+    .productos #banner2{
+        display: flex;
+    }
+    .productos #banner3{
+        display: flex;
+    }
+    .productos #banner4{
+        display: flex;
+    }
+    .productos #banner5{
+        display: flex;
+    }
+    .productos #banner6{
+        display: flex;
+    }
+    .productos #banner7{
+        display: flex;
+    }
+}
