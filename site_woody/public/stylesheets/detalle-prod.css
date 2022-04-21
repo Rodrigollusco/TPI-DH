@@ -29,7 +29,7 @@ main.detail{
   height: 80vh;
     flex-direction: column;
 }
-.detail .card .images, .card .infos{
+.detail .card .slider, .card .infos{
     width: 50%;
 }
 .detail .infos{
@@ -74,6 +74,7 @@ main.detail{
 .detail .info-content p{
  font-weight: 500;
     font-size: 14px;
+    max-width: 80%;
 }
 .detail .buttons{
     color: black;
@@ -112,15 +113,15 @@ main.detail{
     height: 80%;
     display: flex;
     align-items: center;
-position: relative;
+    position: relative;
 }
 
 .detail .slider img{
-display: flex;
+    display: flex;
     margin-top:15px;
-    margin-left: 150px;
+    margin-left: 180px;
     max-width: 70%;
-
+    position: absolute;
 }
 
 @media(min-width:500px){
@@ -128,12 +129,12 @@ display: flex;
      .detail .infos{
         display: flex;
         top: 250px;
-        margin: 0;
+        margin: 100px 0;
     }
     
  .detail .slider img{
      display: flex;
-     margin-top:15px;
+     margin-top:25px;
      margin-left: 150px;
     max-width: 70%;
     max-height: 90%;
@@ -206,9 +207,10 @@ display: flex;
         display: block;
         top: 80px;
         margin: auto;
-        height: 80%;
+        height: 50vh;
         width: 100%;
     }
+   
 }
 @media(min-width:1200px){
     .detail .container{
@@ -228,7 +230,5 @@ display: flex;
         padding: 80px;
         top: 130px;
     }
-    .detail .info-content p{
-        max-width: 80%;
-    }
+   
 }
