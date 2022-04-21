@@ -43,6 +43,8 @@ app.get('/painball', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 
 app.get('/legales', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'legales.html')));
 app.get('/terminos', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'terminos.html')));
 app.get('/preguntas-frecuentes', (req,res) =>res.sendFile(path.resolve(__dirname, 'views', 'preguntas.html')));
+app.get('/recursos', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'recursos.html')));
+app.get('/privacidad', (req,res) =>res.sendFile(path.resolve(__dirname, 'views', 'privacidad.html')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

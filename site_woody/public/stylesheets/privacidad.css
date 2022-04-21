@@ -1,0 +1,30 @@
+/* TERMINOS TERMINOS TERMINOS */
+.privacidad{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px auto;
+}
+.title-section-privacidad {
+    font-size: var(--fs-subtitle);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-blue-france);
+    text-align: left;
+    margin-bottom: 20px;
+}
+.privacidad-texto {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--fs-subtitle);
+    color: var(--color-black);
+    margin-bottom: 10px;
+}
+.privacidad-texto-lista{
+    margin-bottom: 0;
+}
+@media (min-width: 760px){
+    .privacidad{
+        width: 80%;
+        margin: 30px auto;
+    }
+}
