@@ -8,7 +8,11 @@
     text-align: center;
 
 }
-
+.body-login .terminoss{
+    width: 100%;
+    color: var(--color-gray);
+    font-size: var( --fs-subtitle-sub);
+}
 .body-login .login__container {
     display: flex;
     flex-direction: column;
@@ -21,18 +25,13 @@
     display: flex;
     flex-direction: column;
 }
-.body-login .inputs-container .terminos{
-       
-    color: black;
-    font-size: 12px;
-    margin: 15px 0;
-}
+
 .body-login .image-container {
     display: none;
 }
 
 .body-login .inputs-container {
-    width: 90%;
+    width: 80%;
     padding: 10px;
     align-self: center;
 }
@@ -51,74 +50,67 @@
 .body-login .input {
     text-align: center;
     margin: 15px 0;
-    width: 80%;
-    padding: 10px;
+    width: 70%;
+    padding: 10px 0;
     border-radius: 15px 15px;
-    border-style: dotted;
+    border-style: none;
     border-color: var(--color-gray);
+    box-shadow: 1px 4px 5px 3px rgb(187, 187, 187);
+
+
 
 
 }
-
-.body-login button {
+.body-login .buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.body-login .buttons button {
+  
+    display: block;
     border-radius: 15px 15px;
     border: none;
     background-color: var(--color-title-bg);
-    width: 60%;
+    width: 50%;
     color: white;
     margin: 20px 6px auto;
     padding: 6px;
     font-size: 18px;
     box-shadow: 5px 6px 3px rgb(187, 187, 187);
 }
-
-.body-login .btn2 {
-
-    background-color: var(--color-pink);
+.body-login .buttons button a{
+    color: white;
 }
+
 
 .body-login .footer-login p {
     font-size: 12px;
     color: var(--color-gray);
-    margin-top: 15px;
+    margin: 15px 0;
 }
 
 
 
 @media (min-width: 460px) {
     .body-login .inputs-container .p-input {
-        font-size: var(--fs-form);
+        font-size: var(--fs-bodytext);
         text-align: center;
         color: var(--color-pink);
         font-weight: 600;
         padding: 30px;
         
     }
-    .body-login .inputs-container .terminos{
-       
-        color: black;
-        font-size: 16px;
-        margin: 15px 0;
-    }
-
-    .body-login button {
-        border-radius: 15px 15px;
-        border: none;
-        background-color: var(--color-title-bg);
-        width: 70%;
-        color: white;
-        margin: 20px 6px auto;
-        padding: 15px;
-        font-size: 25px;
+  
+    .body-login .buttons button {
+        align-items: center;
+        display: inline;
+        padding: 10px;
+        font-size: 18px;
         box-shadow: 5px 6px 3px rgb(187, 187, 187);
     }
-
-    .body-login .btn2 {
-
-        background-color: var(--color-pink);
-
-    }
-
 
     .body-login .input {
         display: flex;
@@ -127,17 +119,43 @@
         padding: 10px;
         border-radius: 15px 15px;
         border-style: dotted;
-    border-color: var(--color-gray);
+        border-color: var(--color-gray);
         margin-bottom: 15px;
 
     }
 
     .body-login .footer-login p {
         font-size: 20px;
-        color: var(--color-gray)
+        color: var(--color-gray);
+        margin: 15px 0;
+    }
+    .body-login .inputs-container .input{
+        width: 70%;
+        padding: 12px 0;
+        border-style: none;
+        border-color: var(--color-gray);
+        box-shadow: 1px 4px 5px 3px rgb(187, 187, 187);
+
     }
 }
-
+@media (min-width: 768px){
+    .body-login .buttons{
+       flex-direction: row;
+       align-items: center;
+       margin: 30px 0;
+    }
+    .body-login .buttons button {
+        display: block;
+        width: 150px;
+    }
+    .body-login .inputs-container .p-input{
+        font-size: var(--fs-icons);
+    }
+    .body-login .inputs-container .input{
+        padding: 12px 0;
+    }
+    
+}
 @media (min-width: 1200px) {
     .body-login {
         width: 100%;
@@ -154,12 +172,7 @@
     .body-login .login__container {
         height: 1200px;
     }
-    .body-login .inputs-container .terminos{
-       
-        color: black;
-        
-        margin: 15px 0;
-    }
+  
     .background .toy1 {
         margin: 0;
         width: 100%;
@@ -195,42 +208,45 @@
         flex-direction: column;
         margin-top: 100px;
     }
-
-    .body-login button {
+    .body-login .inputs-container .input{
+        padding: 15px 0;
+    }
+    .body-login .buttons button {
         border-radius: 15px 15px;
         border: none;
         background-color: var(--color-title-bg);
-        width: 70%;
+        width: 60%;
         color: white;
-        padding: 15px;
-        font-size: 25px;
+        padding: 10px;
+        font-size: var(--fs-form);
         box-shadow: 5px 6px 3px rgb(187, 187, 187);
-        margin: 40px 6px 6px 6px;
+        margin: 20px 6px 6px 6px;
+    }
+    .body-login .buttons button a{
+        text-decoration: none;
     }
 
-    .body-login .btn2 {
-        margin-top: 15px;
-        background-color: var(--color-pink);
-
-    }
-
-
-    .body-login .input {
+.body-login .input {
         display: flex;
         margin: 20px 0;
         width: 80%;
         padding: 20px;
         border-radius: 15px 15px;
-        border-style: dotted;
-    border-color: var(--color-gray);
+        border-style: none;
+        border-color: var(--color-gray);
+        box-shadow: 1px 4px 5px 3px rgb(187, 187, 187);
+
 
     }
+.body-login .terminoss{
 
+    font-size: var (--fs-subtitle);
+}
     .body-login .footer-login p {
-        font-size: 20px;
+        font-size: var(--fs-bodytext);
         color: var(--color-gray);
-
         text-align: center;
+        margin: 15px 0;
 
     }
 }

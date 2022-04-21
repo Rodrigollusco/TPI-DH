@@ -1,61 +1,73 @@
-
 .toy1 {
     display: none;
 }
+
 .body-register {
     height: 100vw;
-    background-color:var(--color-bg);
+    background-color: var(--color-bg);
     text-align: center;
-    
-} 
-.body-register .register-info-container{
+
+}
+
+.body-register .terminoss {
+    padding: 10px 0;
+    width: 100%;
+    color: var(--color-gray);
+    font-size: var(--fs-subtitle-sub);
+}
+
+.body-register .footer-register .button-reg a {
+    color: var(--color-bg);
+}
+
+.body-register .register-info-container {
     color: #b2b2f9;
-  /* background-color: rebeccapurple; */
+    /* background-color: rebeccapurple; */
     margin-top: 130px;
     display: flex;
     flex-direction: column;
 }
-.body-register .terminos{
-      
-    color: black;
-    font-size: 12px;
-    margin: 20px 0;
-}
-.body-register .image-container{
+
+.body-register .image-container {
     display: none;
 }
-.body-register .inputs-container{
-   
+
+.body-register .inputs-container {
+    margin: 10px 0;
     width: 90%;
-    padding:10px;
-    align-self:  center;
+    padding: 10px;
+    align-self: center;
 }
-.body-register .inputs-container .p-input{
+
+.body-register .inputs-container .p-input {
     display: flex;
     flex-direction: column;
     font-size: 12px;
-    text-align: left;
-    margin-left: 25px;
+
     color: var(--color-pink);
     font-weight: 600;
 }
-.body-register .input{
-    
+
+.body-register .input {
+
     text-align: center;
     margin: 15px 0;
     width: 70%;
     padding: 10px;
     border-radius: 15px 15px;
-    border-style: dotted;
+    border-style: none;
     border-color: var(--color-gray);
-   
+    box-shadow: 1px 4px 5px 3px rgb(187, 187, 187);
+
+
+
 
 }
 
-.body-register .btn2{
+.body-register .footer-register .button-reg {
     border-radius: 15px 15px;
-    border:none;
-    background-color: black;
+    border: none;
+    background-color: var(--color-title-bg);
     width: 60%;
     color: rgb(78, 187, 246);
     margin: 20px 6px auto;
@@ -63,30 +75,26 @@
     font-size: 18px;
     box-shadow: 5px 6px 3px rgb(187, 187, 187);
 }
-.body-register .footer-register p{
+
+.body-register .footer-register p {
     font-size: 14px;
     color: var(--color-gray);
-    margin-top:15px
+    margin: 15px auto;
 }
 
-@media (min-width: 460px){
- 
-    .body-register .inputs-container .p-input{
-        font-size: var(--fs-form);
+@media (min-width: 468px) {
+
+    .body-register .inputs-container .p-input {
+        font-size: var(--fs-bodytext);
         text-align: center;
         color: var(--color-pink);
         font-weight: 600;
         padding: 25px;
     }
-    .body-register .terminos{
-      
-        color: black;
-        font-size: 14px;
-        margin: 20px 0;
-    }
-    .body-register .btn2{
+
+    .body-register .footer-register .button-reg {
         border-radius: 15px 15px;
-        border:none;
+        border: none;
         background-color: var(--color-pink);
         max-width: 70%;
         color: white;
@@ -95,113 +103,146 @@
         font-size: 22px;
         box-shadow: 5px 6px 3px rgb(187, 187, 187);
     }
-    .toy3{
+
+    .toy3 {
         display: inline-block;
         width: 50%;
         padding: 15px;
     }
-    .body-register .input{
-       display: flex;
-        margin: auto; 
-      
+
+    .body-register .input {
+        display: flex;
+        margin: auto;
         max-width: 80%;
-        padding: 10px;
+        padding: 12px 0;
+        border-style: none;
         border-radius: 15px 15px;
-        border-style: dotted;
         border-color: var(--color-gray);
-       
-    
+        box-shadow: 1px 5px 6px 3px rgb(187, 187, 187);
+
+
+
     }
-    .body-register .footer-register, .footer-register p{
-        font-size: 20px;
+
+    .body-register .footer-register p {
+        font-size: var(--fs-bodytext);
         color: var(--color-gray)
     }
 }
-@media(min-width:1200px){
-    .register-design{
+
+@media(min-width:900px) {
+    .body-register .input {
+        display: flex;
+        margin: auto;
+        max-width: 80%;
+        padding: 10px 0;
+        border-radius: 15px 15px;
+        border-color: var(--color-gray);
+        box-shadow: 1px 5px 6px 3px rgb(187, 187, 187);
+
+
+
+    }
+
+    .body-register .terminoss {
+        font-size: var(--fs-bodytext);
+    }
+
+    .body-register .inputs-container {
+        width: 70%;
+        padding: 15px 0;
+    }
+
+    .body-register .inputs-container input {
+        padding: 15px 0;
+    }
+}
+
+@media(min-width:1200px) {
+    .register-design {
         display: grid;
-        grid-template-columns: repeat(2,50%);
+        grid-template-columns: repeat(2, 50%);
         height: 100%;
 
     }
-    .background_register{
+
+    .background_register {
         background-image: url('/images/login\ pc.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-      
+
     }
-    .body-register{
+
+    .body-register {
         width: 100%;
         height: 100vw;
     }
-    .body-register .inputs-container p{
-        font-size: var(--fs-form);
-        
+
+    .body-register .inputs-container p {
+        font-size: var(--fs-icons);
         color: var(--color-pink);
         font-weight: 600;
         padding: 30px;
     }
-    .body-register .register__container{
-        height: 1200px;
+
+    .body-register .register__container {
+        height: 100vh;
     }
-    .body-register .register-info-container h2{
+
+    .body-register .register-info-container h2 {
         font-size: 40px;
     }
-    
-    .body-register .inputs-container{
+
+    .body-register .inputs-container {
         width: 100%;
         align-items: center;
         display: flex;
         flex-direction: column;
         margin-top: 15px;
     }
-    .body-register .inputs-container .terminos label{
-      
-        color: black;
-        
-        margin: 15px 0;
+
+    .body-register .inputs-container .p-input {
+        color: var(--color-violet);
     }
-    .body-register .btn2{
-        border-radius: 15px 15px;
-        border:none;
-        background-color: var(--color-pink);
-        width: 70%;
-        color: white;
-        margin: 20px 6px auto;
-        padding: 15px;
-        font-size: 25px;
-        box-shadow: 5px 6px 3px rgb(187, 187, 187);
-    }
-    
-    .background .toy1{
+
+
+
+    .background .toy1 {
         display: block;
         margin: 0;
         width: 100%;
-       
-      
+
+
     }
-    .body-register .input{
+
+    .body-register .input {
         display: flex;
         margin: 20px 0;
         width: 80%;
-        padding: 10px;
+        padding: 15px 0;
         border-radius: 15px 15px;
-        border-style: dotted;
+        border-style: none;
         border-color: var(--color-gray);
-       
+        box-shadow: 1px 4px 5px 3px rgb(187, 187, 187);
+
+
     }
-    .body-register .footer-register{
+
+    .body-register .footer-register {
         font-size: 20px;
         color: var(--color-gray);
         margin-top: 15px;
     }
-    
-    .body-register .footer-register p{
+
+    .body-register .footer-register p {
         font-size: 20px;
         color: var(--color-gray);
-        
+
         text-align: center;
 
+    }
+    .body-register .footer-register .button-reg {
+        background-color: var(--color-violet);
     }
 }
