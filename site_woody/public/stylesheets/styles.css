@@ -2,9 +2,9 @@
 
 @import './general.css';
 @import './header.css';
+@import './productos.css';
 @import './main.css';
 @import './footer.css';
-@import './productos.css';
 @import './detalle-prod.css';
 @import './login.css';
 @import './register.css';
