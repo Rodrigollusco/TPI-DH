@@ -35,7 +35,15 @@ app.get('/contacto', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 
 /*carrito & productos*/
 app.get('/buy', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'buy.html')));
 app.get('/productos', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'productos.html')));
-app.get('/painball', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'painball.html')));
+/*detalle de productos*/
+app.get('/alfombra', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'alfombra.html')));
+app.get('/ajedrez', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'ajedrez.html')));
+app.get('/adivina', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'adivina.html')));
+app.get('/basta', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'basta.html')));
+app.get('/bebote', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'bebote.html')));
+app.get('/cocinita', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'cocinita.html')));
+app.get('/cars', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'cars.html')));
+app.get('/conect4', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'conect4.html')));
 
 /*footer*/
 app.get('/legales', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'legales.html')));
