@@ -1,0 +1,50 @@
+/* LEGALES LEGALES LEGALES */
+.recursos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px auto;
+}
+.title-section-recursos {
+    font-size: var(--fs-subtitle);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-blue-france);
+    text-align: left;
+    margin-bottom: 10px;
+}
+.recursos-subtitle{
+    font-size: var(--fs-subtitle);
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-blue-france);
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.recursos-subtitle-sub{
+    font-size: var(--fs-subtitle);
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-black);
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.recursos-texto {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--fs-subtitle);
+    color: var(--color-black);
+    margin-bottom: 5px;
+}
+.recursos-cambio{
+    margin-bottom: 30px;
+}
+.recursos-cambio-mini{
+    margin-bottom: 20px;
+}
+
+@media(min-width: 760px){
+    .recursos{
+        width: 80%;
+        margin: 30px auto;
+    }
+}

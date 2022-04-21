@@ -31,6 +31,8 @@ app.get('/password', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 
 
 /*contact*/
 app.get('/contacto', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'contact.html')));
+/*about-us*/
+app.get('/nosotros', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'about-us.html')));
 
 /*carrito & productos*/
 app.get('/buy', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'buy.html')));
@@ -49,6 +51,8 @@ app.get('/conect4', (req,res) => res.sendFile(path.resolve(__dirname, 'views', '
 app.get('/legales', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'legales.html')));
 app.get('/terminos', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'terminos.html')));
 app.get('/preguntas-frecuentes', (req,res) =>res.sendFile(path.resolve(__dirname, 'views', 'preguntas.html')));
+app.get('/recursos', (req,res) => res.sendFile(path.resolve(__dirname, 'views', 'recursos.html')));
+app.get('/privacidad', (req,res) =>res.sendFile(path.resolve(__dirname, 'views', 'privacidad.html')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
