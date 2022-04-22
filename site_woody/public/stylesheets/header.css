@@ -54,8 +54,12 @@ header {
     /* display: none; */
     order: 3;
     width: 100%;
+
 }
 
+.search-bar-button{
+    cursor: pointer;
+}
 /* user & cart */
 .user-cart-container {
     display: flex;
@@ -217,7 +221,7 @@ header {
     /* SUPERIOR NAVBAR */
     .superior-menu-container {
         border-bottom: none;
-        height: 40px;
+        height: 45px;
         width: 85%;
         margin: 10px 20px 0;
         padding: 0;
