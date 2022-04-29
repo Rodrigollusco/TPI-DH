@@ -3,14 +3,14 @@
 
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 50px 50px;
 }
 
-.contact .container:after{
+ .container:after{
 	content: '';
     /*necesario poner solo comillas aunqeu no se use*/
 	position: absolute;
@@ -18,12 +18,11 @@
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("/images/tablet\ register.jpg") no-repeat center;
-	background-size: cover;
 	filter: blur(40px);
 	z-index: -1;
     /*ubicado detrás*/
 }
+
 .contact .contact-box{
     grid-template-columns: 1fr;
 }
@@ -93,7 +92,7 @@
 }
 
 .contact .field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
+    border: 2px solid var(--color-pink);
     background-color: #fff;
 }
 
@@ -117,4 +116,13 @@
         background-size: cover;
         height: 100%;
     }
+	
+}
+@media(min-width: 1200px){
+	.contact  .left{
+        background: url('/images/4680620.jpg') no-repeat center;
+        background-size: cover;
+        height: 100%;
+    }
+	
 }
